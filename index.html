@@ -1,58 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pibo's Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Phiwokuhle Shongwe</title>
-  <meta name="description" content="On the way to greatness">
-  <meta name="author" content="Pibo Rock">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-</head>
-<body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>About Me</h4>
-        <p>I studied Math and Computer Science at Skidmore College. Spent a year at Thayer School of Engineering studying Electronics, Dartmouth College.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <h4>Current Job</h4>
-      <p>I'm a Cloud Support Engineer at Amazon Web Services.</p>
-      <p>That's why I'm really eager to build solutions to real-life problems after being exposed to a fast-paced working environment.</p>
-      <p>On a typical day I handle chats, calls, email cases, tickets, reachouts/escalations and projects. After work I work on coding problems.</p>
-      <code>
-        Still mastering Algorithms.
-      </code>
-    </div>
-  </div>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+    </head>
+    <body>
+        <header>
+    
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Pibo Shongwe</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Software Developer</p>
+            <img src="img/dev-pibo.jpeg" alt="a picture of Pibo smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Automation</h3>
+                    <p>Have used python, bash, perl to automate boring tasks. Still learning.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Amazon Web Services</h3>
+                    <p>A Subject Matter Expert in the Serverless space focusing mainly on Step Functions and Lambda amongst several other services.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Software Development</h3>
+                    <p>Contribute to internal tools that use ReactJS and Redux technologies.</p>
+                </div> 
+                <!-- / service -->
+            </div> <!-- / services -->
+            
+            <!-- <a href="#work" class="btn">My Work</a> -->
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Developer based out of Cape Town, South Africa</p>
+           
+           <div class="about-me__body">
+               <p>TBC</p>
+           </div>
+           
+           <img src="img/dev-pibo-02.png" alt="Pibo next to a hotel" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        
+        <!-- <section class="my-work" id="work"> -->
+            <!-- <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+             -->
+            <!-- <div class="portfolio"> -->
+                <!-- Portfolio item 01 -->
+                <!-- <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+                </a> -->
+                
+                <!-- Portfolio item 02 -->
+                <!-- <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+                </a> -->
+                
+                <!-- Portfolio item 03 -->
+                <!-- <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+                </a> -->
+                
+                <!-- Portfolio item 04 -->
+                <!-- <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+                </a> -->
+                
+                <!-- Portfolio item 05 -->
+                <!-- <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+                </a> -->
+                
+                <!-- Portfolio item 06 -->
+                <!-- <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+                </a> -->
+                
+                <!-- Portfolio item 07 -->
+                <!-- <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
+                </a> -->
+                
+                <!-- Portfolio item 08 -->
+                <!-- <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
+                </a> -->
+                
+                <!-- Portfolio item 09 -->
+                <!-- <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
+                </a> -->
+                
+                <!-- Portfolio item 0 0-->
+                <!-- <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
+                </a> -->
+            <!-- </div> -->
+        <!-- </section> -->
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:hello@jane.dev" class="footer__link">piboman@yahoo.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/piboman">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/pshongwe">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+    </body>
 </html>
