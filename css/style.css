@@ -210,12 +210,17 @@ nav { display: none; }
 }
 
 .services {
-    margin-bottom: 4em;
+    display: block; 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 2em;
 }
 
 .service {
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 800px; 
+    margin: 0 auto 2em; 
+    padding: 1em; 
+    box-shadow: var(--bs);
 }
 
 @media (min-width: 800px) {
